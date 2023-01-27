@@ -1,6 +1,6 @@
 # Ring Artifact Correction in Photon-Counting Spectral CT Using a Convolutional Neural Network With Spectral Loss
 
-This repo contains code acompanying [Ring Artifact Correction in Photon-Counting Spectral CT Using a Convolutional Neural Network With Spectral Loss](https//addarxiv.com). It only contains the code used to train and evaluate the network. We are unfourtunately unable to share the code used to simulate photon-counting imaging. Nor are we able to share the data used for training and evaluation. 
+This repo contains code acompanying [Ring Artifact Correction in Photon-Counting Spectral CT Using a Convolutional Neural Network With Spectral Loss](https//addarxiv.com). It only contains the code used to train and evaluate the network. We are unfortunately unable to share the code used to simulate photon-counting imaging. Nor are we able to share the data used for training and evaluation. 
 
 # Run the code
 ## Dependencies 
