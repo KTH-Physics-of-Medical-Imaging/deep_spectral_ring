@@ -12,6 +12,6 @@ pip install -r requirements.txt
 ## Usage
 The two main scripts are train and evaluate. 
 
-## Contact (add additional) 
+## Contact 
 Dennis Hein <br />
 dhein@kth.se
