@@ -10,28 +10,25 @@ pip install -r requirements.txt
 ```
 
 # Usage
-The two main scripts are train and evaluate. 
-
-```sh
-main.py:
-  --config: Training configuration.
-    (default: 'None')
-  --eval_folder: The folder name for storing evaluation results
-    (default: 'eval')
-  --mode: <train|eval|train_deq>: Running mode: train or eval or training the Flow++ variational dequantization model
-  --workdir: Working directory
+The two main scripts are train and evaluate. To train run 
+```
+python train.py --FLAGS 
+```
+To see available flags run `python train.py -h`. Similarly, to evaluate our network we run 
+```
+python evaluate.py --FLAGS 
 ```
 
-* `config` is the path to the config file. Our config files are provided in `configs/`. They are formatted according to [`ml_collections`](https://github.com/google/ml_collections) and should be quite self-explanatory.
+## Example
+To train the top performing network run 
+```
+python train.py --net unet_alt --loss_fn vgg16_l1_alt --layer 9 --lambda_1 10 --lambda_2 1 --skip_connection --batch_sz 2 --init_features 64 --patch_sz 512 --train ./data/train_kits_img --valid ./data/val_kits_img --epochs 100 --n_samples 2 --log_interval 25
+```
 
-  **Naming conventions of config files**: the name of a config file contains the following attributes:
-
-  * dataset: Either `cifar10` or `imagenet32`
-  * model: Either `ddpmpp_continuous` or `ddpmpp_deep_continuous`
-
-*  `workdir` is the path that stores all artifacts of one experiment, like checkpoints, samples, and evaluation results.
-
-* `eval_folder` is the name of a subfolder in `workdir` that stores all artifacts of the evaluation process, like meta checkpoints for supporting pre-emption recovery, image samples, and numpy dumps of quantitative results.
+This model is then saved as `resnet_3_32_100.pth` in `.\results`. To evaluate the performance of this network, while plotting 6 samples and saving the predictions as a .mat files to be passed to the image reconstruction routine we run
+```
+python evaluate.py --net resnet_3_32_100 --n_samples 6 --save_mat 
+```
 
 # Contact 
 Dennis Hein <br />
