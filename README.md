@@ -10,7 +10,7 @@ pip install -r requirements.txt
 ```
 
 ## Usage
-THe two main scripts are train and evaluate. 
+The two main scripts are train and evaluate. 
 
 ## Contact (add additional) 
 Dennis Hein <br />
