@@ -2,7 +2,7 @@
 
 This repo contains code acompanying [Ring Artifact Correction in Photon-Counting Spectral CT Using a Convolutional Neural Network With Spectral Loss](https//addarxiv.com).
 
-# How to run the code
+# Run the code
 ## Dependencies 
 Install necessary packages via 
 ```sh
