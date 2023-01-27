@@ -9,7 +9,7 @@ Install necessary packages via
 pip install -r requirements.txt
 ```
 
-# Usage
+## Usage
 The two main scripts are train and evaluate. To train run 
 ```
 python train.py --FLAGS 
@@ -19,7 +19,7 @@ To see available flags run `python train.py -h`. Similarly, to evaluate our netw
 python evaluate.py --FLAGS 
 ```
 
-## Example
+### Example
 For instance, to train the top performing network, we ran  
 ```
 python train.py --net unet_alt --loss_fn vgg16_l1_alt --layer 9 --lambda_1 10 --lambda_2 1 --skip_connection --batch_sz 2 --init_features 64 --patch_sz 512 --train ./data/train_kits_img --valid ./data/val_kits_img --epochs 100 --n_samples 2 --log_interval 25
