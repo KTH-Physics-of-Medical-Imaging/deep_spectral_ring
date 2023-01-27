@@ -2,11 +2,15 @@
 
 This repo contains code acompanying [Ring Artifact Correction in Photon-Counting Spectral CT Using a Convolutional Neural Network With Spectral Loss](https//addarxiv.com).
 
+# How to run the code
 ## Dependencies 
-Install necessary packages 
+Install necessary packages via 
 ```sh
 pip install -r requirements.txt
 ```
+
+## Usage
+THe two main scripts are train and evaluate. 
 
 ## Contact (add additional) 
 Dennis Hein <br />
