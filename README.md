@@ -24,12 +24,11 @@ For instance, to train the top performing network, we ran
 ```
 python train.py --net unet_alt --loss_fn vgg16_l1_alt --layer 9 --lambda_1 10 --lambda_2 1 --skip_connection --batch_sz 2 --init_features 64 --patch_sz 512 --train ./data/train_kits_img --valid ./data/val_kits_img --epochs 100 --n_samples 2 --log_interval 25
 ```
-We are unfortunately unable to share the data that was used. 
-
 This model is then saved as `unet_alt_64_vgg16_l1_alt_9_100_2_sc_512_10.0_1.0_2_train_kits_img` in `.\results`. To evaluate this network run 
 ```
 python evaluate.py --net unet_alt_64_vgg16_l1_alt_9_100_2_sc_512_10.0_1.0_2_train_kits_img --loss_fn vgg16_alt --data ./data/test_kits_img --idx_print 34 --n_samples 1
 ```
+We are unfortunately unable to share the data that was used. 
 
 # Contact 
 Dennis Hein <br />
