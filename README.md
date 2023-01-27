@@ -27,7 +27,7 @@ python train.py --net unet_alt --loss_fn vgg16_l1_alt --layer 9 --lambda_1 10 --
 
 This model is then saved as `unet_alt_64_vgg16_l1_alt_9_100_2_sc_512_10.0_1.0_2_train_kits_img` in `.\results`. To evaluate this network run 
 ```
-%run evaluate.py --net unet_alt_64_vgg16_l1_alt_9_100_2_sc_512_10.0_1.0_2_train_kits_img --loss_fn vgg16_alt --data ./data/test_kits_img --idx_print 34 --n_samples 1
+python evaluate.py --net unet_alt_64_vgg16_l1_alt_9_100_2_sc_512_10.0_1.0_2_train_kits_img --loss_fn vgg16_alt --data ./data/test_kits_img --idx_print 34 --n_samples 1
 ```
 
 # Contact 
