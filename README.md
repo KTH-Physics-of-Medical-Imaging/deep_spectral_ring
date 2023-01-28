@@ -7,8 +7,8 @@ This repo contains code acompanying [Ring Artifact Correction in Photon-Counting
 Install necessary packages via 
 ```sh
 pip install -r requirements.txt
-In addtion, you need to download [Pytorch_ssim](https://github.com/Po-Hsun-Su/pytorch-ssim) and put pytorch_ssim in your directory. 
 ```
+In addtion, you need to download [pytorch_ssim](https://github.com/Po-Hsun-Su/pytorch-ssim) and put it in your directory. 
 
 ## Usage
 The two main scripts are train and evaluate. To train run 
